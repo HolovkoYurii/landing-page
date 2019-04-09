@@ -262,7 +262,7 @@
   }
   .pointer .fa-angle-down:before{
     margin-left: -4px;
-    margin-right: 16px;
+    margin-right: 17px;
 
   }
   /* #main end */
@@ -1011,15 +1011,10 @@ h4{
   .col-lg-12{
     width: 100%;
   }
-  .block-icon{
-    float:none;
-    margin:auto;
-    margin-bottom: 10px;
-  }
   .item-content{
-    margin-left:0;
-    text-align: center;
-    display: inline;
+    margin-left:none;
+    text-align: left;
+    display: inline-block;
   }
   .container-for-flip{
     position: absolute;
@@ -1047,6 +1042,12 @@ h4{
   height: 450px;
   width: 370px;
 } 
+.contact-info{
+  margin: auto;
+  width: 228px;
+  margin-bottom: 25px;
+}
+
 }
 @media(max-width: 991px){
   
@@ -1104,6 +1105,8 @@ h4{
     top: 60%;
     left: 59%;
   }
+  .subtitle{
+    padding-right: 26px;}
 
 }
 @media(max-width:767px){
@@ -1165,11 +1168,11 @@ h4{
   }
   .services .tabs ul li{
     width: 50%;
-    margin-bottom:20px;
+    margin-bottom:30px;
   }
   .portfolio .tabs ul li{
     float:none;
-    margin-bottom:5px;
+    margin-bottom:20px;
   }
   .portfolio .tabs ul li+li{
     margin-left:0;
@@ -1221,7 +1224,7 @@ h4{
       margin: auto;
     }
     .contact-info{
-      margin-bottom:20px;
+      margin-bottom:30px;
     }
     .contact-title {
       margin-bottom:5px;
@@ -1261,6 +1264,7 @@ footer{
 }
 .services .title{
   padding-bottom:0;
+  margin-bottom: 40px;
 }  
 .slicknav_menu{
   display:block;
@@ -1278,6 +1282,7 @@ footer{
 .slicknav_btn {
   margin: 0;
   margin-right: 20px;
+  background-color:transparent;
 }
 .logo{
   padding-top:10px;
@@ -1297,6 +1302,15 @@ main{
    width: 50%;
    margin-bottom: 10px;
  } 
+ .contact .subscribe{
+   min-width: 192px;
+ }
+ .about-studio .row{
+   padding-bottom:30px;
+ }
+
+
+
 
   }
 
