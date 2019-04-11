@@ -22,4 +22,4 @@
 - Open Sans
 - Dosis
 
-<https://holovkoyurii.github.io/>
+#### is added gulp
