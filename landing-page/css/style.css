@@ -262,7 +262,7 @@
   }
   .pointer .fa-angle-down:before{
     margin-left: -4px;
-    margin-right: 16px;
+    margin-right: 17px;
 
   }
   /* #main end */
@@ -271,8 +271,33 @@
   .about-studio{
     border-bottom: 1px solid rgb(19, 19, 19,0.08);
   }
+  .about-studio-text p{
+    padding: 0 15px;
+  }
+  .about-studio-text blockquote p{
+    padding: 0;
+    margin-bottom:33px;
+  }
+  .about-studio-text blockquote {
+    padding: 0 15px;
+  }
+  .about-studio-text{
+    margin:0 -15px;
+  }
+  .wrapp{
+    display:flex;
+  }
+  
   .about-studio h3{
     text-align: left;
+  }
+  .about-studio-text{
+    display:flex;
+    padding-bottom: 30px; 
+  }
+  .item-team{
+    display:flex;
+    justify-content: space-between;
   }
  .title{
    font-family: 'Dosis', sans-serif;
@@ -295,6 +320,7 @@
  .item{
    text-align: center;
    font-family: 'Dosis', sans-serif;
+   width:370px;
  }
  span{
    display: block;
@@ -477,7 +503,7 @@
     }
     .portfolio .tabs{
       text-align: center;
-      min-height: 742px; 
+      max-height: 742px; 
     }
    
     .portfolio img{
@@ -972,6 +998,12 @@ h4{
 .slicknav_menu{
   display:none;
 }
+.form-info-mini{
+  display:none;
+}
+.form-info{
+  display: block;
+}
 /* footer end */
 @media(max-width: 1200px){
   .col-lg-1{
@@ -1011,15 +1043,10 @@ h4{
   .col-lg-12{
     width: 100%;
   }
-  .block-icon{
-    float:none;
-    margin:auto;
-    margin-bottom: 10px;
-  }
   .item-content{
-    margin-left:0;
-    text-align: center;
-    display: inline;
+    margin-left:none;
+    text-align: left;
+    display: inline-block;
   }
   .container-for-flip{
     position: absolute;
@@ -1043,10 +1070,27 @@ h4{
   width: 370px;
   margin: auto;
 }
-.about-studio img{
-  height: 450px;
-  width: 370px;
-} 
+.contact-info{
+  margin: auto;
+  width: 228px;
+  margin-bottom: 25px;
+}
+.item-team{
+  flex-direction: column;
+  align-items: center;
+}
+.item-foto{
+  margin-bottom:5px;
+}
+.item-name {
+  margin-bottom: 5px;
+}
+.item{
+  margin-bottom:20px;
+}
+
+
+
 }
 @media(max-width: 991px){
   
@@ -1087,15 +1131,6 @@ h4{
   .col-md-12{
     width: 100%;
   }
-  .item{
-    margin-bottom:20px;
-  }
-  .item-foto{
-    margin-bottom:5px;
-  }
-  .item-name{
-    margin-bottom:5px;
-  }
   h1{
     letter-spacing: 30px;
   }
@@ -1104,7 +1139,13 @@ h4{
     top: 60%;
     left: 59%;
   }
+  .subtitle{
+    padding-right: 26px;}
 
+}
+
+blockquote{
+  margin-bottom: 33px;
 }
 @media(max-width:767px){
   .col-1-sm-1{
@@ -1165,11 +1206,11 @@ h4{
   }
   .services .tabs ul li{
     width: 50%;
-    margin-bottom:20px;
+    margin-bottom:30px;
   }
   .portfolio .tabs ul li{
     float:none;
-    margin-bottom:5px;
+    margin-bottom:20px;
   }
   .portfolio .tabs ul li+li{
     margin-left:0;
@@ -1221,7 +1262,7 @@ h4{
       margin: auto;
     }
     .contact-info{
-      margin-bottom:20px;
+      margin-bottom:30px;
     }
     .contact-title {
       margin-bottom:5px;
@@ -1232,8 +1273,8 @@ h4{
       margin-bottom: 10px
       } 
   .news-wrapper{
-          text-align: center;
-          margin-bottom: 40px;
+      text-align: center;
+      margin-bottom: 40px;
      }
   .news span{
     display:block;
@@ -1261,6 +1302,7 @@ footer{
 }
 .services .title{
   padding-bottom:0;
+  margin-bottom: 40px;
 }  
 .slicknav_menu{
   display:block;
@@ -1278,6 +1320,7 @@ footer{
 .slicknav_btn {
   margin: 0;
   margin-right: 20px;
+  background-color:transparent;
 }
 .logo{
   padding-top:10px;
@@ -1297,7 +1340,28 @@ main{
    width: 50%;
    margin-bottom: 10px;
  } 
+ .contact .subscribe{
+   min-width: 192px;
+ }
 
+  .form-info{
+    display:none;
+  }
+  .contact input:nth-child(2){
+    margin-bottom: 10px;
+  }
+  .form-info-mini{
+    margin-bottom: 20px;
+    display: block;
+  }
+  .about-studio-text{
+    display: block;
+  }
+  .services .default-text{
+    padding-top: 33px;
+  }
+  .portfolio .tabs{
+   max-height: none;
   }
 
 @media(max-width: 570px){
