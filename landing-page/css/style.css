@@ -271,8 +271,33 @@
   .about-studio{
     border-bottom: 1px solid rgb(19, 19, 19,0.08);
   }
+  .about-studio-text p{
+    padding: 0 15px;
+  }
+  .about-studio-text blockquote p{
+    padding: 0;
+    margin-bottom:33px;
+  }
+  .about-studio-text blockquote {
+    padding: 0 15px;
+  }
+  .about-studio-text{
+    margin:0 -15px;
+  }
+  .wrapp{
+    display:flex;
+  }
+  
   .about-studio h3{
     text-align: left;
+  }
+  .about-studio-text{
+    display:flex;
+    padding-bottom: 30px; 
+  }
+  .item-team{
+    display:flex;
+    justify-content: space-between;
   }
  .title{
    font-family: 'Dosis', sans-serif;
@@ -295,6 +320,7 @@
  .item{
    text-align: center;
    font-family: 'Dosis', sans-serif;
+   width:370px;
  }
  span{
    display: block;
@@ -477,7 +503,7 @@
     }
     .portfolio .tabs{
       text-align: center;
-      min-height: 742px; 
+      max-height: 742px; 
     }
    
     .portfolio img{
@@ -972,6 +998,12 @@ h4{
 .slicknav_menu{
   display:none;
 }
+.form-info-mini{
+  display:none;
+}
+.form-info{
+  display: block;
+}
 /* footer end */
 @media(max-width: 1200px){
   .col-lg-1{
@@ -1038,15 +1070,26 @@ h4{
   width: 370px;
   margin: auto;
 }
-.about-studio img{
-  height: 450px;
-  width: 370px;
-} 
 .contact-info{
   margin: auto;
   width: 228px;
   margin-bottom: 25px;
 }
+.item-team{
+  flex-direction: column;
+  align-items: center;
+}
+.item-foto{
+  margin-bottom:5px;
+}
+.item-name {
+  margin-bottom: 5px;
+}
+.item{
+  margin-bottom:20px;
+}
+
+
 
 }
 @media(max-width: 991px){
@@ -1088,15 +1131,6 @@ h4{
   .col-md-12{
     width: 100%;
   }
-  .item{
-    margin-bottom:20px;
-  }
-  .item-foto{
-    margin-bottom:5px;
-  }
-  .item-name{
-    margin-bottom:5px;
-  }
   h1{
     letter-spacing: 30px;
   }
@@ -1108,6 +1142,10 @@ h4{
   .subtitle{
     padding-right: 26px;}
 
+}
+
+blockquote{
+  margin-bottom: 33px;
 }
 @media(max-width:767px){
   .col-1-sm-1{
@@ -1235,8 +1273,8 @@ h4{
       margin-bottom: 10px
       } 
   .news-wrapper{
-          text-align: center;
-          margin-bottom: 40px;
+      text-align: center;
+      margin-bottom: 40px;
      }
   .news span{
     display:block;
@@ -1305,13 +1343,25 @@ main{
  .contact .subscribe{
    min-width: 192px;
  }
- .about-studio .row{
-   padding-bottom:30px;
- }
 
-
-
-
+  .form-info{
+    display:none;
+  }
+  .contact input:nth-child(2){
+    margin-bottom: 10px;
+  }
+  .form-info-mini{
+    margin-bottom: 20px;
+    display: block;
+  }
+  .about-studio-text{
+    display: block;
+  }
+  .services .default-text{
+    padding-top: 33px;
+  }
+  .portfolio .tabs{
+   max-height: none;
   }
 
 @media(max-width: 570px){
