@@ -12,6 +12,6 @@
     "autoprefixer": "^9.5.1",
     "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
-    "gulp-postcss": "^8.0.0"
+    "gulp-postcss": "^8.0.0" 
   }
 }
